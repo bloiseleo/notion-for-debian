@@ -9,5 +9,6 @@ fi
 
 echo "Package.json found!"
 echo "Building .deb package"
-npx electron-forge make --targets @electron-forge/maker-deb
+npx electron-forge make --targets @electron-forge/maker-deb --arch x64
+npx electron-forge make --targets @electron-forge/maker-deb --arch arm64
 echo "Done"
